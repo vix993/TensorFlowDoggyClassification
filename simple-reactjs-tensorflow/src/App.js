@@ -65,7 +65,7 @@ function App() {
   const buttonProps ={
     initial: { text: 'Load Model', action: loadModel },
     loadingModel: { text: 'Loading Model...', action: () => {} },
-    awaitingUpload: { text: 'Upload Photo', action: () => inputRef.current.click(), next },
+    awaitingUpload: { text: 'Upload Photo', action: () => inputRef.current.click() },
     ready: { text: 'Identify', action: identify },
     classifying: { text: 'Identifying...', action: () => {} },
     complete: { text: 'Reset', action: reset },
